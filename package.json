@@ -1,0 +1,46 @@
+{
+  "name": "flutter-asset-genius",
+  "displayName": "Flutter Asset Genius",
+  "description": "Secara otomatis memindai folder aset dan membuat kelas Dart statis untuk path aset yang aman.",
+  "version": "0.0.1",
+  "publisher": "khoirulmustofa",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flutter-asset-genius.generateAssets",
+        "title": "Generate/Update Asset Class"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceFilename == pubspec.yaml",
+          "command": "flutter-asset-genius.generateAssets",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.41.0",
+    "js-yaml": "^4.1.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
