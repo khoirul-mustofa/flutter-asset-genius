@@ -2,8 +2,9 @@
   "name": "flutter-asset-genius",
   "displayName": "Flutter Asset Genius",
   "description": "Secara otomatis memindai folder aset dan membuat kelas Dart statis untuk path aset yang aman.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "khoirulmustofa",
+  "icon": "logo.png",
   "license": "MIT",
   "engines": {
     "vscode": "^1.80.0"
