@@ -42,5 +42,8 @@
   },
   "dependencies": {
     "js-yaml": "^4.1.0"
-  }
+  },"repository": {
+  "type": "git",
+  "url": "https://github.com/khoirul-mustofa/flutter-asset-genius.git"
+}
 }
